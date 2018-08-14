@@ -4,4 +4,8 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
+   - name: list contents of directory
+        command: ls mydir
+        register: contents
+
 
