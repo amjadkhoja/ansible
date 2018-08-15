@@ -1,15 +1,15 @@
 - name: Hello World Sample
   hosts: all
   tasks:
-   - name: Hello Message
-      debug:
-        msg: "Hello World!"
+
    - name: Install python on windows
     win_package:
     path: https://www.python.org/ftp/python/2.7.15/python-2.7.15.amd64.msi
     product_id: python-2.7.15.amd64
     state: present
-   
+   - name: Hello Message
+      debug:
+        msg: "Hello World!"
    - name: list contents of directory
       command: dir c:/
       register: contents
