@@ -4,4 +4,7 @@
   - name: Print debug message
     debug:
       msg: Hello, world!  
+    - name: list contents of directory
+        command: ls /home
+        register: contents      
 
