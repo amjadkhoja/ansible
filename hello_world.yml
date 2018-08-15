@@ -1,18 +1,17 @@
 - name: Hello World Sample
   hosts: all
   tasks:
-  
-    - name: Hello Message
+   - name: Hello Message
       debug:
-        msg: "Hello World!"
-       
+        msg: "Hello World!"   
+   
    - name: Install python on windows
     win_package:
     path: install['download_url']
     product_id: install['product_id']
     state: present
    
-    - name: list contents of directory
+   - name: list contents of directory
       command: ls /home
       register: contents
 
