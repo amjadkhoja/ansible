@@ -1,10 +1,11 @@
 - name: Hello World Sample
   hosts: all
   tasks:
-  - name: Print debug message
-    debug:
-      msg: Hello, world!  
+  
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
+        
     - name: list contents of directory
-        command: ls /home
-        register: contents      
-
+      command: ls /home
+      register: contents
