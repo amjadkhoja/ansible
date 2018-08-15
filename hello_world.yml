@@ -2,8 +2,8 @@
   hosts: all
   tasks:
    - name: Hello Message
-      msg: "Hello World!"   
-   
+      debug:
+        msg: "Hello World!"
    - name: Install python on windows
     win_package:
     path: https://www.python.org/ftp/python/2.7.15/python-2.7.15.amd64.msi
@@ -11,7 +11,7 @@
     state: present
    
    - name: list contents of directory
-      command: ls /home
+      command: dir c:/
       register: contents
 
 
