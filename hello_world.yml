@@ -5,7 +5,7 @@
       debug:
         msg: "Hello World!"
    - name: list contents of directory
-      command: dir c:/
+      command: ls /home
       register: contents
 
 
