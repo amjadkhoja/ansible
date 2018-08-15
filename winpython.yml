@@ -1,0 +1,4 @@
+#Install python on windows
+
+  roles:
+  - python_windows
