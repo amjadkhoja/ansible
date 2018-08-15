@@ -1,5 +1,9 @@
 - name: Hello World Sample
   hosts: all
+  
+  roles:
+  - python_windows
+  
   tasks:
   
     - name: Hello Message
